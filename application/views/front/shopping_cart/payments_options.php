@@ -26,23 +26,23 @@
     <?php
         if($p_set == 'ok'){ 
     ?>
-    <div class="cc-selector col-sm-3">
+    <!-- <div class="cc-selector col-sm-3">
         <input id="visa" type="radio" style="display:block;" checked name="payment_type" value="paypal"/>
         <label class="drinkcard-cc" style="margin-bottom:0px; width:100%; overflow:hidden; " for="visa" onclick="radio_check('visa')">
             <img src="<?php echo base_url(); ?>template/front/img/preview/payments/paypal.jpg" width="100%" height="100%" style=" text-align-last:center;" alt="<?php echo translate('paypal');?>" />
                
         </label>
-    </div>
+    </div> -->
     <?php
         } if($s_set == 'ok'){
     ?>
-    <div class="cc-selector col-sm-3">
+    <!-- <div class="cc-selector col-sm-3">
         <input id="mastercardd" style="display:block;" type="radio" name="payment_type" value="stripe"/>
         <label class="drinkcard-cc" style="margin-bottom:0px; width:100%; overflow:hidden; " for="mastercardd" id="customButtong" onclick="radio_check('mastercardd')">
             <img src="<?php echo base_url(); ?>template/front/img/preview/payments/stripe.jpg" width="100%" height="100%" style=" text-align-last:center;" alt="<?php echo translate('stripe');?>" />
                
         </label>
-    </div>
+    </div> -->
     <script>
         $(document).ready(function(e) {
             //<script src="https://js.stripe.com/v2/"><script>
