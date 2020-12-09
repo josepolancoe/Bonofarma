@@ -21,9 +21,7 @@
         </ul>
     </div>
     <?php if($this->session->userdata('title') == 'admin'){ ?>
-        <div class="hide-fixed pull-right pad-rgt">
-            Currently v<?php echo $this->db->get_where('general_settings',array('type'=>'version'))->row()->value; ?>
-        </div>
+       
     <?php } ?>
 	<p class="pad-lft">&#0169; <?php echo date("Y"); ?> <?php echo $system_title;?></p>
 </footer>

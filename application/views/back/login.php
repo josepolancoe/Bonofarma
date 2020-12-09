@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="refresh" content="300">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<title><?php echo translate('login');?> | <?php echo $this->db->get_where('general_settings',array('type' => 'system_name'))->row()->value;?></title>
 
 	<!--STYLESHEET-->

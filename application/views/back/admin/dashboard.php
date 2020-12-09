@@ -11,7 +11,7 @@
     <div id="page-content">
     	
         <div class="row" <?php if($this->crud_model->get_type_name_by_id('general_settings','68','value') == 'ok'){}else{ ?>style="display:none;"<?php } ?> >
-            <div class="col-md-4 col-lg-4">
+            <div class="col-md-6 col-lg-6">
                 <div class="panel panel-bordered panel-purple">
                     <div class="panel-heading">
                         <h3 class="panel-title"><?php echo translate('24_hours_stock');?></h3>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             
-            <div class="col-md-4 col-lg-4">
+            <div class="col-md-6 col-lg-6">
                 <div class="panel panel-bordered panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title"><?php echo translate('24_hours_sale');?></h3>
@@ -39,23 +39,6 @@
                             <p class="h4">
                                 <span class="label label-success"><?php echo currency('','def');?></span>
                                 <span id="gauge2-txt" class="label label-success">0</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-lg-4">
-                <div class="panel panel-bordered panel-black">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><?php echo translate('24_hours_destroy');?></h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="text-center">
-                            <canvas id="gauge3" height="70" class="canvas-responsive"></canvas>
-                            <p class="h4">
-                                <span class="label label-black"><?php echo currency('','def');?></span>
-                                <span id="gauge3-txt" class="label label-black">0</span>
                             </p>
                         </div>
                     </div>
@@ -134,7 +117,7 @@
             <div class="col-md-6 col-lg-6">
                 <div class="panel panel-bordered panel-purple">
                     <h3 class="panel-title" style="border-bottom:1px #9365b8 solid; !important;">
-                        <?php echo translate('category_wise_monthly_stock');?>
+                        <?php echo 'Valor del stock añadido durante el mes por categoria'?>
                     </h3>
                     <div class="panel-body">
                         <div id="chartdiv" style="width: 100%; height: 300px;"></div>
@@ -142,35 +125,12 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-6">
-                <div class="panel panel-bordered panel-black">
-                    <h3 class="panel-title" style="border-bottom:1px #303641 solid; !important;">
-                        <?php echo translate('category_wise_monthly_destroy');?>
-                    </h3>
-                    <div class="panel-body">
-                        <div id="chartdiv3" style="width: 100%; height: 300px;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-6 col-lg-6">
                 <div class="panel panel-bordered panel-success">
                     <h3 class="panel-title" style="border-bottom:1px #00a65a solid; !important;">
-                        <?php echo translate('category_wise_monthly_sale');?>
+                        <?php echo 'Venta Mensual por Categoría (Precio de Venta)';?>
                     </h3>
                     <div class="panel-body">
                         <div id="chartdiv2" style="width: 100%; height: 300px;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6">
-                <div class="panel panel-bordered panel-primary">
-                    <h3 class="panel-title" style="border-bottom:1px #458fd2 solid; !important;">
-                        <?php echo translate('category_wise_monthly_grand_profit');?>
-                    </h3>
-                    <div class="panel-body">
-                        <div id="chartdiv4" style="width: 100%; height: 300px;"></div>
                     </div>
                 </div>
             </div>

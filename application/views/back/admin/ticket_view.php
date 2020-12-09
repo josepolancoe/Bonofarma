@@ -77,10 +77,8 @@
                             ?>
                             <img <?php if(file_exists('uploads/user_image/user_'.$from1['id'].'.jpg')){ ?>
                                 src="<?php echo base_url(); ?>uploads/user_image/user_<?php echo $from1['id']; ?>.jpg"
-                            <?php } else if($this->db->get_where('user',array('user_id'=>$from1['id']))->row()->fb_id !== ''){ ?>
-                                src="https://graph.facebook.com/<?php echo $this->db->get_where('user',array('user_id'=>$from1['id']))->row()->fb_id; ?>/picture?type=large" 
-                            <?php } else { ?>
-                                src="<?php echo base_url(); ?>template/front/uploads/img/user.jpg"
+                            <?php }else { ?>
+                                src="<?php echo base_url(); ?>uploads/user_image/default.jpg"
                             <?php } ?>
                             class="img-sm img-border" alt="Profile Picture">
                             <?php

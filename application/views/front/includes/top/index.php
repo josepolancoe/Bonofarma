@@ -5,6 +5,7 @@
 <meta name="author" content="<?php echo $author; ?>">
 <meta name="revisit-after" content="<?php echo $revisit_after; ?> days">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 <?php
 include 'meta/'.$asset_page.'.php';
